@@ -7,8 +7,8 @@ from pyspark.sql import SparkSession
 from muon_definitions import (get_allowed_sub_eras)
 
 # Using wildcards for the filenames, the glob will catch the right files
-user      = getpass.getuser() 
-sourceDir = '/eos/user/%s/%s/tnpTuples_muons/updated7' % (user[0], user)
+user      = getpass.getuser()
+sourceDir = '/eos/user/%s/%s/TnP/Muon/Ntuple/mixed/' % (user[0], user)
 fnamesMap = {
     'Z': {
         'Run2016': {
