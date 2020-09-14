@@ -34,7 +34,7 @@ def getEff(binName, fname, shift=None):
         hP = tfile.Get('{}_GenPass'.format(binName))
         hF = tfile.Get('{}_GenFail'.format(binName))
         # hard code Z for now (same as in run_single_fit.py)
-        if shift == 'massRangUp':
+        if shift == 'massRangeUp':
             blow, bhigh = 75, 135
         elif shift == 'massRangeDown':
             blow, bhigh = 65, 125
@@ -73,7 +73,7 @@ def getDataEff(binName, fname, shift=None):
         hP = tfile.Get('{}_Pass'.format(binName))
         hF = tfile.Get('{}_Fail'.format(binName))
         # hard code Z for now (same as in run_single_fit.py)
-        if shift == 'massRangUp':
+        if shift == 'massRangeUp':
             blow, bhigh = 75, 135
         elif shift == 'massRangeDown':
             blow, bhigh = 65, 125
